@@ -15,7 +15,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-		<app.runtime>4.3.0-20210322</app.runtime>
+		<app.runtime>4.3.0</app.runtime>
 		<mule.maven.plugin.version>3.5.1</mule.maven.plugin.version>
 	</properties>
 	<profiles>
@@ -45,8 +45,8 @@
 						<properties>							
 							<api.id>16957095</api.id>
 							<mule.env>dev</mule.env>
-							<anypoint.platform.client_id>${anypoint.platform.client_id}</anypoint.platform.client_id>
-							<anypoint.platform.client_secret>${anypoint.platform.client_secret}</anypoint.platform.client_secret>						
+							<anypoint.platform.client_id>059a964a209f40f5b0b780b123f1246b</anypoint.platform.client_id>
+							<anypoint.platform.client_secret>BFCc81E5f2AA46c49C380ef29bb1c9d6</anypoint.platform.client_secret>						
 						</properties>
 					</cloudHubDeployment>
 				</configuration>
@@ -80,8 +80,8 @@
 						<properties>
 							<api.id>16957666</api.id>
 							<mule.env>test</mule.env>
-							<anypoint.platform.client_id>${anypoint.platform.client_id}</anypoint.platform.client_id>
-							<anypoint.platform.client_secret>${anypoint.platform.client_secret}</anypoint.platform.client_secret>						
+							<anypoint.platform.client_id>1e711ea6ac594f158606fef3d3e4bf3d</anypoint.platform.client_id>
+							<anypoint.platform.client_secret>F452Eb4d8F364DAABa7aA608e957b77f</anypoint.platform.client_secret>						
 						</properties>
 					</cloudHubDeployment>
 				</configuration>
@@ -113,8 +113,8 @@
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>4.3.0</muleVersion>
-						<username>${username}</username>
-						<password>${password}</password>	
+						<username>Hanuman_1234</username>
+						<password>Smpatro@123</password>	
 						<objectStoreV2>true</objectStoreV2>
 						<properties>
 							<http.port>8081</http.port>
