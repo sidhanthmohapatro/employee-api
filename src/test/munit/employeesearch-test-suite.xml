@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:munit="http://www.mulesoft.org/schema/mule/munit" xmlns:munit-tools="http://www.mulesoft.org/schema/mule/munit-tools"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xsi:schemaLocation="
+		http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+		http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd
+		http://www.mulesoft.org/schema/mule/munit-tools  http://www.mulesoft.org/schema/mule/munit-tools/current/mule-munit-tools.xsd">
+	<munit:config name="employeesearch-test-suite.xml" />
+	<munit:test name="employeesearch-test-suite-employeesearchSub_FlowTest" doc:id="b1b9de3d-594e-43c8-aca9-f455023e13ce" description="Test">
+		<munit:execution >
+			<flow-ref doc:name="Flow-ref to employeesearchSub_Flow" doc:id="dc9b0b3e-4b43-4c91-8c61-fded5f170146" name="employeesearchSub_Flow"/>
+		</munit:execution>
+		<munit:validation >
+			<logger level="INFO" doc:name="Logger" doc:id="33cdf46e-44d8-4a0a-9340-a2d0f8418844" message="#[payload]"/>
+			<munit-tools:assert-that doc:name="Assert that" doc:id="c4f3ff52-c4f5-4b51-a203-a160f24d0a43" expression="#[payload]" is="#[MunitTools::notNullValue()]" message="Failed, Payload is Empty"/>
+		</munit:validation>
+	</munit:test>
+
+
+</mule>
