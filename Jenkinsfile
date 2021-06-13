@@ -31,7 +31,7 @@ pipeline {
   }
    post {
         always {
-            emailext body: 'Deployment is successfull', recipientProviders: [developers(), requestor()], to: 'sidhanth488@gmail.com' subject: 'Deployment is Successfull',
+            emailext body: 'Deployment is successfull', recipientProviders: [developers(), requestor()], to: 'sidhanth488@gmail.com' subject: 'Deployment is Successfull'
         }
     }
 }
