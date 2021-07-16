@@ -35,7 +35,7 @@
 						<configuration>
 							<cloudHubDeployment>
 								<applicationName>dev-manemployeesearch-muleapi</applicationName>
-								<environment>Development</environment>
+								<environment>dev</environment>
 								<region>us-east-1</region>
 								<workers>1</workers>
 								<workerType>MICRO</workerType>
@@ -70,7 +70,7 @@
 						<configuration>
 							<cloudHubDeployment>
 								<applicationName>test-manemployeesearch-muleapi</applicationName>
-								<environment>Test</environment>
+								<environment>test</environment>
 								<region>us-east-1</region>
 								<workers>1</workers>
 								<objectStoreV2>true</objectStoreV2>
